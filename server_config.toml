@@ -1,0 +1,24 @@
+[auth]
+# Specify the primary provider for username/password login
+primary_provider = "mock"
+
+# Configuration for the primary provider
+[auth.providers.mock]
+username = "testuser"
+password_hash = "$argon2id$v=19$m=19456,t=2,p=1$0PrJ56wh4Ls9lL2Ivo3S/A$6juEaOEMVMgIOfaJWxpafkuJ9Sx5zO4sEl28TwlU2ek"
+
+# Configuration for secondary SSO providers
+[auth.sso_providers.google]
+client_id = "YOUR_GOOGLE_CLIENT_ID"
+client_secret = "YOUR_GOOGLE_CLIENT_SECRET"
+redirect_uri = "http://localhost:8080/api/auth/sso/callback/google"
+
+[auth.sso_providers.microsoft]
+client_id = "YOUR_MICROSOFT_CLIENT_ID"
+client_secret = "YOUR_MICROSOFT_CLIENT_SECRET"
+redirect_uri = "http://localhost:8080/api/auth/sso/callback/microsoft"
+
+[auth.sso_providers.apple]
+client_id = "YOUR_APPLE_CLIENT_ID"
+client_secret = "YOUR_APPLE_CLIENT_SECRET"
+redirect_uri = "http://localhost:8080/api/auth/sso/callback/apple"

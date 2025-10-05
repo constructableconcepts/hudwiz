@@ -1,0 +1,53 @@
+/*
+ * Animation Library for hudwiz
+ *
+ * This file contains a set of reusable CSS keyframe animations
+ * to create micro-interactions and enhance the user experience.
+ */
+
+/* --- Fade In --- */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.3s ease-in-out forwards;
+}
+
+/* --- Slide Up --- */
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slide-up 0.4s ease-out forwards;
+}
+
+/* --- Pulse on Click --- */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 0.2s ease-in-out;
+}

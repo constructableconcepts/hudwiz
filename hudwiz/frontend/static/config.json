@@ -1,0 +1,31 @@
+{
+  "layout": {
+    "sidebar_left": {
+      "component": "ControlsDrawer"
+    },
+    "sidebar_right": {
+      "component": "DetailsDrawer"
+    },
+    "activity_bar": {
+      "component": "UserDrawer"
+    },
+    "floating_toolbar": {
+      "component": "DrawingToolbar"
+    },
+    "hud_top_left": {
+      "component": "TopLeftHud"
+    },
+    "hud_top_right": {
+      "component": "TopRightHud"
+    },
+    "hud_bottom_left": {
+      "component": "BottomLeftHud"
+    },
+    "hud_bottom_right": {
+      "component": "BottomRightHud"
+    },
+    "main_panel": {
+      "component": "ChatHistoryView"
+    }
+  }
+}
